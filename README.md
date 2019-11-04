@@ -22,3 +22,5 @@ to a Fortran program that calculates linear-response for strongly-correlated mat
 
 Re-wt.py - in principle can reproduce any change in geometry with the cartesian components given by VASP's IBRION=7 routine
 (the linear-response calculations)
+
+E_pt_by_pt.py - Just a simple script to extract total Kohn-Sham energies, k-point, and band index for post-processing with awk later (finite-difference). Will update such that files can be prompted to be renamed, then subtracted with the awk commands via Python os module.
