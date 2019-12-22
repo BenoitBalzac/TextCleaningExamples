@@ -8,9 +8,8 @@ construct
 the tight-binding model, that is atomic approximation, of the solid using only nearest neighbor k-points
 
 rndHamr.py- this takes the difference between Hr.dat files. For example, from one geometry to another slightly perturbed one.
-There will soon be a new prompt and loop to get rid of orbitals that are virtually unaffected by perturbations in a given
-direction. This can speed up Hamiltonian calculations and be modified to quantify marginal differences in energy-scales,
-and hopefully next-nearest-neighbors one day
+There is now a prompt and loop to get rid of orbitals that are virtually unaffected by perturbations in a given
+direction, choosing the sub-space appropriate for tight-binding like calculation. This yield the low-energy model Hamiltonian and quantify marginal differences in energy-scales. Next-nearest-neighbors version soon
 
 WannProfiler.py - This script can output gnuplot files to show the Bloch wavefunction composition in a given energy window 
 (The NBANDS index) for a given Wannier function. Will add user prompt flexibility soon, curren version only does first d1 
