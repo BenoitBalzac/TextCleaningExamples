@@ -3,13 +3,13 @@
 
 These are some scripts I wrote in Python to post-process text file outputs from Wannier90 and VASP quantum chemistry packages. 
 
-rnwHamr.py- This is to post-process the hr.dat file, the real-space overlap between wannier orbitals. This is used to 
+rnwHamr.py- This is to post-process the hr.dat files, the real-space overlap between wannier orbitals. This is used to 
 construct
 the tight-binding model, that is atomic approximation, of the solid using only nearest neighbor k-points
 
 rndHamr.py- this takes the difference between Hr.dat files. For example, from one geometry to another slightly perturbed one.
 There is now a prompt and loop to get rid of orbitals that are virtually unaffected by perturbations in a given
-direction, choosing the sub-space appropriate for tight-binding like calculation. This yield the low-energy model Hamiltonian and quantify marginal differences in energy-scales. Next-nearest-neighbors version soon
+direction, choosing the sub-space appropriate for tight-binding like calculation. This yield the low-energy model Hamiltonian and quantify marginal differences in energy-scales. Next-nearest-neighbors version soon and full integration with rnwHamr.py maybe in the future...
 
 WannProfiler.py - This script can output gnuplot files to show the Bloch wavefunction composition in a given energy window 
 (The NBANDS index) for a given Wannier function. Will add user prompt flexibility soon, curren version only does first d1 
